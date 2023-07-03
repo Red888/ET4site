@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>GROUP FOUR</title>
+        <meta charset="utf -8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background: black;
+                font-family: 'Roboto', sans-serif;
+                color: black;
+            }
+
+            @import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+            .hidden {
+                opacity: 0;
+            }
+
+            .console-container {
+                font-family: Khula;
+                font-size: 1.5em;
+                text-align: center;
+                height: 200px;
+                width: 600px;
+                display: block;
+                position: absolute;
+                color: white;
+                top: 180px;
+                margin-left: 900px;
+            }
+
+            .console-underscore {
+                display: inline-block;
+                position: relative;
+                top: -0.14em;
+                left: 10px;
+            }
+
+            .smoke {
+                bottom: 60px;
+                position: absolute;
+                margin-left: 550px;
+                background: #c6a801;
+                border-style: double;
+                color: white;
+            }
+
+                .smoke ul {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                }
+
+                    .smoke ul li {
+                        list-style: none;
+                        font-weight: bold;
+                        letter-spacing: 10px;
+                        color: black;
+                        font-size: 3em;
+                        display: inline-block;
+                    }
+
+
+                    .smoke ul:hover li {
+                        animation: smoke 2s linear forwards;
+                    }
+
+
+            @keyframes smoke {
+                0% {
+                    transform: rotate(0deg) translateY(0px);
+                    opacity: 1;
+                    filter: blur(1px);
+                }
+
+                100% {
+                    transform: rotate(45deg) translateY(-200px);
+                    opacity: 0;
+                    filter: blur(20px);
+                }
+            }
+
+            .smoke ul li:nth-child(1) {
+                animation-delay: 0s
+            }
+
+            .smoke ul li:nth-child(2) {
+                animation-delay: .4s
+            }
+
+            .smoke ul li:nth-child(3) {
+                animation-delay: .8s
+            }
+
+            .smoke ul li:nth-child(4) {
+                animation-delay: 1.2s
+            }
+
+            .smoke ul li:nth-child(5) {
+                animation-delay: 1.6s
+            }
+
+            .smoke ul li:nth-child(6) {
+                animation-delay: 1.8s
+            }
+
+            .smoke ul li:nth-child(7) {
+                animation-delay: 1.9s
+            }
+
+
+            .search-box {
+                margin: 30px;
+                margin-left: 1260px;
+                position: absolute;
+                transform: translate(-50%,-50%);
+                background: #c6a801;
+                height: 40px;
+                border-radius: 40px;
+                border-style: solid;
+            }
+
+                .search-box:hover > .search-txt {
+                    width: 210px;
+                    padding: 0;
+                    top: 50px;
+                }
+
+                .search-box:hover > .search-btn {
+                    background: white;
+                }
+
+            .search-btn {
+                color: #c6a801;
+                float: right;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: #2f3640;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.4s;
+                text-decoration: none;
+                border-style: solid;
+            }
+
+            .search-txt {
+                border: none;
+                background: none;
+                outline: none;
+                float: left;
+                padding: 0;
+                color: black;
+                font-size: 16px;
+                transition: 0.4s;
+                line-height: 40px;
+                width: 0px;
+            }
+
+            .animation h2 {
+                position: absolute;
+                bottom: 200px;
+                margin-left: 550px;
+                color: white;
+                font-family: 'Roboto', sans-serif;
+                font-size: 20px;
+            }
+
+            .animation_1 h2 {
+                position: absolute;
+                bottom: 230px;
+                margin-left: 550px;
+                color: white;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            span {
+                color: #c6a801
+            }
+
+            .name_site {
+                position: absolute;
+                bottom: 230px;
+                margin-left: 550px;
+                color: white;
+                font-family: 'Roboto', sans-serif;
+                line-height: 100px;
+                font-weight: bold;
+                height: 100px;
+                text-align: left;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                overflow: hidden;
+            }
+
+            .slide {
+                color: #c6a801;
+                margin-left: 12px;
+                box-sizing: border-box;
+                animation: slider 6s linear infinite;
+            }
+
+            @keyframes slider {
+                0% {
+                    margin-top: -400px;
+                }
+
+                5% {
+                    margin-top: -200px;
+                }
+
+                30% {
+                    margin-top: -200px;
+                }
+
+                35% {
+                    margin-top: 0px;
+                }
+
+                65% {
+                    margin-top: 0px;
+                }
+
+                70% {
+                    margin-top: 200px;
+                }
+
+                100% {
+                    margin-top: 200px;
+                }
+            }
+
+
+            .box {
+                border-style: solid;
+                color: white;
+                position: absolute;
+                bottom: 300px;
+                margin-left: 550px;
+                text-align: center;
+                font-size: 40px;
+                font-weight: bold;
+            }
+
+            .move {
+                perspective: 80px;
+                outline: none;
+            }
+
+            .box:hover .flash {
+                margin-left: 20px;
+                transition: margin-left 1s cubic-bezier(0, 0.75, 0, 1);
+            }
+
+            .light {
+                display: inline-block;
+            }
+
+            .box:hover .light {
+                transform: rotateY(-60deg);
+                transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
+            }
+
+
+            .logo {
+                position: absolute;
+                display: block;
+                margin-left: 350px;
+                bottom: 60px;
+                border-style: double;
+                color: white;
+            }
+
+            .tabi {
+                position: absolute;
+                display: block;
+                bottom: 0;
+                margin-left: 1100px;
+            }
+
+            .star {
+                position: absolute;
+                display: block;
+                bottom: 0;
+                margin-left: 50px;
+            }
+
+            .ederson {
+                position: absolute;
+                display: block;
+                margin-left: 50px;
+                border-style: double;
+                color: #4b4000;
+            }
+
+            .vince {
+                position: absolute;
+                display: block;
+                margin-left: 50px;
+                border-style: double;
+                color: #4b4000;
+            }
+
+            .recto {
+                position: absolute;
+                display: block;
+                margin-left: 50px;
+                border-style: double;
+                color: #4b4000;
+            }
+
+            .kevin {
+                position: absolute;
+                display: block;
+                margin-left: 50px;
+                border-style: double;
+                color: #4b4000;
+            }
+
+            .jade {
+                position: absolute;
+                display: block;
+                margin-left: 50px;
+                border-style: double;
+                color: #4b4000;
+            }
+
+            .franklin {
+                position: absolute;
+                display: block;
+                margin-left: 50px;
+                border-style: double;
+                color: #4b4000;
+            }
+
+            .menu_bar {
+                background: #c6a801;
+                text-align: center;
+                border-style: solid;
+                border-radius: 9px;
+                padding: 30px;
+                margin: 60px;
+            }
+
+                .menu_bar ul {
+                    display: inline-flex;
+                    list-style: none;
+                    color: black;
+                }
+
+                    .menu_bar ul li {
+                        width: 280px;
+                        padding: 20px;
+                        background: #453b00;
+                        border-radius: 15px;
+                    }
+
+                        .menu_bar ul li a {
+                            text-decoration: none;
+                            color: white;
+                        }
+
+                            .menu_bar ul li a:hover {
+                                background: #453b00;
+                                border-radius: 9px;
+                                padding: 10px;
+                                background: black;
+                            }
+
+            .sub_menu {
+                display: none;
+            }
+
+            .menu_bar ul li:hover .sub_menu {
+                display: block;
+                position: absolute;
+            }
+
+                .menu_bar ul li:hover .sub_menu ul {
+                    display: block;
+                    margin: 10px;
+                    border-style: double;
+                    color: black;
+                    background: #947202;
+                }
+
+                    .menu_bar ul li:hover .sub_menu ul li {
+                        width: 250px;
+                        margin: 8px;
+                        padding: 10px;
+                        border-bottom: 1px dotted yellow;
+                        background: transparent;
+                        border-radius: 20px;
+                        text-align: center;
+                        background: #4b4000;
+                    }
+
+
+            .sub_menu_1 {
+                display: none;
+            }
+
+            .menu_bar ul li:hover .sub_menu_1 {
+                display: block;
+                position: absolute;
+                border-style: double;
+            }
+
+                .menu_bar ul li:hover .sub_menu_1 ul {
+                    display: block;
+                }
+
+                    .menu_bar ul li:hover .sub_menu_1 ul li {
+                        width: 270px;
+                        padding: 20px;
+                        border-radius: 9px;
+                        text-align: left;
+                    }
+
+            .info {
+                display: none;
+            }
+
+            .sub_menu ul li:hover .info {
+                display: block;
+                position: absolute;
+                background: #947202;
+                margin-left: 250px;
+                border-style: solid;
+                top: 10px;
+            }
+
+                .sub_menu ul li:hover .info ul {
+                    display: block;
+                }
+
+                    .sub_menu ul li:hover .info ul li {
+                        width: 260px;
+                        padding: 8px;
+                        border-bottom: 1px dotted white;
+                        background: transparent;
+                        text-align: left;
+                    }
+
+                        .sub_menu ul li:hover .info ul li:last-child {
+                            border-bottom: none;
+                        }
+
+            .info_1 {
+                display: none;
+            }
+
+            .sub_menu ul li:hover .info_1 {
+                display: block;
+                position: absolute;
+                background: #947202;
+                margin-left: 250px;
+                border-style: solid;
+                top: 10px;
+            }
+
+                .sub_menu ul li:hover .info_1 ul {
+                    display: block;
+                }
+
+                    .sub_menu ul li:hover .info_1 ul li {
+                        width: 260px;
+                        padding: 8px;
+                        border-bottom: 1px dotted white;
+                        background: transparent;
+                        text-align: left;
+                    }
+
+                        .sub_menu ul li:hover .info_1 ul li:last-child {
+                            border-bottom: none;
+                        }
+
+            .info_2 {
+                display: none;
+            }
+
+            .sub_menu ul li:hover .info_2 {
+                display: block;
+                position: absolute;
+                background: #947202;
+                margin-left: 250px;
+                border-style: solid;
+                top: 10px;
+            }
+
+                .sub_menu ul li:hover .info_2 ul {
+                    display: block;
+                }
+
+                    .sub_menu ul li:hover .info_2 ul li {
+                        width: 260px;
+                        padding: 8px;
+                        border-bottom: 1px dotted white;
+                        background: transparent;
+                        text-align: left;
+                    }
+
+                        .sub_menu ul li:hover .info_2 ul li:last-child {
+                            border-bottom: none;
+                        }
+
+            .info_3 {
+                display: none;
+            }
+
+            .sub_menu ul li:hover .info_3 {
+                display: block;
+                position: absolute;
+                background: #947202;
+                margin-left: 250px;
+                border-style: solid;
+                top: 10px;
+            }
+
+                .sub_menu ul li:hover .info_3 ul {
+                    display: block;
+                }
+
+                    .sub_menu ul li:hover .info_3 ul li {
+                        width: 260px;
+                        padding: 8px;
+                        border-bottom: 1px dotted white;
+                        background: transparent;
+                        text-align: left;
+                    }
+
+                        .sub_menu ul li:hover .info_3 ul li:last-child {
+                            border-bottom: none;
+                        }
+
+            .info_4 {
+                display: none;
+            }
+
+            .sub_menu ul li:hover .info_4 {
+                display: block;
+                position: absolute;
+                background: #947202;
+                margin-left: 250px;
+                border-style: solid;
+                top: 10px;
+            }
+
+                .sub_menu ul li:hover .info_4 ul {
+                    display: block;
+                }
+
+                    .sub_menu ul li:hover .info_4 ul li {
+                        width: 260px;
+                        padding: 8px;
+                        border-bottom: 1px dotted white;
+                        background: transparent;
+                        text-align: left;
+                    }
+
+                        .sub_menu ul li:hover .info_4 ul li:last-child {
+                            border-bottom: none;
+                        }
+
+            .info_5 {
+                display: none;
+            }
+
+            .sub_menu ul li:hover .info_5 {
+                display: block;
+                position: absolute;
+                background: #947202;
+                margin-left: 250px;
+                border-style: solid;
+                top: 10px;
+            }
+
+                .sub_menu ul li:hover .info_5 ul {
+                    display: block;
+                }
+
+                    .sub_menu ul li:hover .info_5 ul li {
+                        width: 260px;
+                        padding: 8px;
+                        border-bottom: 1px dotted white;
+                        background: transparent;
+                        text-align: left;
+                    }
+
+                        .sub_menu ul li:hover .info_5 ul li:last-child {
+                            border-bottom: none;
+                        }
+
+            .sub_menu_1 {
+                display: none;
+            }
+
+            .menu_bar ul li:hover .sub_menu_1 {
+                display: block;
+                position: absolute;
+                border-style: double;
+                background: #4b4000
+            }
+
+                .menu_bar ul li:hover .sub_menu_1 ul {
+                    display: block;
+                    margin: 10px;
+                }
+
+                    .menu_bar ul li:hover .sub_menu_1 ul li {
+                        width: 250px;
+                        padding: 10px;
+                        border-bottom: 1px dotted white;
+                        background: transparent;
+                        border-radius: 5px;
+                        text-align: left;
+                    }
+
+            .sub_menu_2 {
+                display: none;
+            }
+
+            .menu_bar ul li:hover .sub_menu_2 {
+                display: block;
+                position: absolute;
+                border-style: double;
+                background: #947202
+            }
+
+                .menu_bar ul li:hover .sub_menu_2 ul {
+                    display: block;
+                    margin: 10px;
+                }
+
+                    .menu_bar ul li:hover .sub_menu_2 ul li {
+                        width: 515px;
+                        padding: 10px;
+                        border-bottom: 1px dotted white;
+                        background: transparent;
+                        border-radius: 9px;
+                        text-align: left;
+                    }
+
+            .contact {
+                display: none;
+            }
+
+            .menu_bar ul li:hover .contact {
+                display: block;
+                position: absolute;
+                border-style: double;
+                background: #947202;
+            }
+
+                .menu_bar ul li:hover .contact ul {
+                    display: block;
+                    margin: 10px;
+                    color: black;
+                }
+
+                    .menu_bar ul li:hover .contact ul li {
+                        width: 280px;
+                        padding: 10px;
+                        border-bottom: 1px dotted white;
+                        background: transparent;
+                        border-radius: 9px;
+                        text-align: left;
+                    }
+
+            p {
+                font-family: Calibri;
+            }
+
+            .mytabs {
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 530px;
+                margin: 10px;
+                padding: 25px;
+                border-style: solid;
+            }
+
+                .mytabs input[type="radio"] {
+                    display: none;
+                }
+
+                .mytabs label {
+                    padding: 25px;
+                    background: #9fac00;
+                    border-style: solid;
+                }
+
+                .mytabs .tab {
+                    width: 100%;
+                    padding: 20px;
+                    background: #ac6a03;
+                    order: 2;
+                    display: none;
+                    border-style: solid;
+                }
+
+                    .mytabs .tab h2 {
+                        font-size: 3em;
+                    }
+
+                .mytabs input[type='radio']:checked + label + .tab {
+                    display: block;
+                }
+
+                .mytabs input[type='radio']:checked + label {
+                    background: #e08900;
+                }
+        </style>
+        <div class='console-container'><span id='text'></span>
+            <div class='console-underscore' id='console'>&#95;
+            </div>
+        </div>
+        <script>
+            consoleText(['Keep on SEARCHING!..', 'Keep on CODING!..', 'HELLO EARTH!'], 'text', ['lightgreen', 'yellow', 'lightblue']);
+
+            function consoleText(words, id, colors) {
+                if (colors === undefined) colors = ['#fff'];
+                var visible = true;
+                var con = document.getElementById('console');
+                var letterCount = 1;
+                var x = 1;
+                var waiting = false;
+                var target = document.getElementById(id)
+                target.setAttribute('style', 'color:' + colors[0])
+                window.setInterval(function () {
+
+                    if (letterCount === 0 && waiting === false) {
+                        waiting = true;
+                        target.innerHTML = words[0].substring(0, letterCount)
+                        window.setTimeout(function () {
+                            var usedColor = colors.shift();
+                            colors.push(usedColor);
+                            var usedWord = words.shift();
+                            words.push(usedWord);
+                            x = 1;
+                            target.setAttribute('style', 'color:' + colors[0])
+                            letterCount += x;
+                            waiting = false;
+                        }, 1000)
+                    } else if (letterCount === words[0].length + 1 && waiting === false) {
+                        waiting = true;
+                        window.setTimeout(function () {
+                            x = -1;
+                            letterCount += x;
+                            waiting = false;
+                        }, 1000)
+                    } else if (waiting === false) {
+                        target.innerHTML = words[0].substring(0, letterCount)
+                        letterCount += x;
+                    }
+                }, 120)
+                window.setInterval(function () {
+                    if (visible === true) {
+                        con.className = 'console-underscore hidden'
+                        visible = false;
+
+                    } else {
+                        con.className = 'console-underscore'
+
+                        visible = true;
+                    }
+                }, 400)
+            }
+        </script>
+        <div class="smoke">
+            <ul>
+                <li>E</li>
+                <li>T</li>
+                <li>4</li>
+                <li>s</li>
+                <li>i</li>
+                <li>t</li>
+                <li>e</li>
+            </ul>
+
+        </div>
+        <div class="box">
+            <p class="move">
+                <span class="flash">EMERGING</span>
+                <span class="light">TECHNOLOGIES</span>
+            </p>
+        </div>
+
+        <div class="animation">
+            <h2><hr />Tanauan <span class="type"</span></h2>
+        </div>
+
+        <div class="animation_1">
+            <h2>Bachelor of Science in <span class="type_1"</span></h2>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed(".type", { strings: ["City College"], typeSpeed: 150, backSpeed: 150, loop: true })
+            var typed = new Typed(".type_1", { strings: ["Computer Engineering"], typeSpeed: 150, backSpeed: 150, loop: true })
+        </script>
+        <div class="name_site">
+            CPEN21 |
+            <div class="slide">
+                <div>Group Four</div>
+                <div>BS-CpE 4A</div>
+                <div>Site of the CpE Students</div>
+            </div>
+        </div>
+        <img src="logo.png" width="170" height="280" class="logo">
+        <img src="tabi.png" width="300" height="1000" class="tabi">
+        <img src="star.png" width="180" height="350" class="star">
+        <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search">
+            <a class="search-btn" href="#"><i class="fa fa-search"></i></a>
+        </div>
+        <h4>
+            <div class="menu_bar">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa fa-home">&nbsp;&nbsp;</i>HOME</a>
+                        <div class="sub_menu_1">
+                            <h4>
+                                <ul>
+                                    <div class="mytabs">
+
+                                        <input type="radio" id="tabHOME" name="mytabs" checked="checked">
+                                        <label for="tabHOME">SUBJECT<hr style="width:100%" color="black"></label>
+                                        <div class="tab">
+
+                                    <li>Emerging Technologies</li>
+                                    <li>Course Code: CPEN21</li>
+                                    <li>Units: 3</li>
+                                    <li>Schedule: Friday</li>
+                                    <li>Time:6:30-7:30</li>
+                        </div>
+
+                        <input type="radio" id="tabABOUT_US" name="mytabs">
+                        <label for="tabABOUT_US">COURSE<hr style="width:100%" color="black"></label>
+                        <div class="tab">
+                    <li>Bachelor of Science in Computer Engineering</li>
+                    <li>Section: 4A</li>
+            </div>
+
+            <input type="radio" id="tabMEMBER_INFO" name="mytabs">
+            <label for="tabMEMBER_INFO">PROF INFORMATION<hr style="width:100%" color="black"></label>
+            <div class="tab">
+                <ul>
+                    <div class="member_list">
+                    <li>Engr. Jomiel Enriquez</li>
+                    <br />
+                    <li>Proffessor</li>
+                    <br />
+                    <li>Emerging Technologies Proffessor</li>
+                    <br />
+                    <li>Software Engineer</li>
+                    <br />
+                    <li>Prof at Tanauan City College</li>
+                    <br />
+            </div>
+            </ul>
+            </div>
+            </div>
+
+            </ul>
+        </h4>
+        </div>
+        </li>
+        <li>
+            <a href="#"><i class="fa fa-users"></i>&nbsp;&nbsp;PROFILE</a>
+            <div class="sub_menu">
+                <ul>
+                    <li>
+                        <a href="#">Ederson Manalo</a>
+                        <div class="info">
+                            <ul>
+                                <img src="ederson.jpg" width="170" height="170" class="ederson">
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <li>Age: 21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Course: BS-CpE</li>
+                                <li>Year & Section: 4A</li>
+                                <li>Birthday: March 08, 2001</li>
+                                <li>Place of Birth: Brygy. Cale, Tanauan City Batangas</li>
+                                <li>Hobby: Online Gaming/Editing</li>
+                                <li>Talent/s: Dancing</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Vince Harris Mangabat</a>
+                        <div class="info_1">
+                            <ul>
+                                <img src="vince.jpg" width="170" height="170" class="vince">
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <li>Age: 21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Course: BS-CpE</li>
+                                <li>Course: BS-CpE</li>
+                                <li>Year & Section: 4A</li>
+                                <li>Birthday: December 24, 2000</li>
+                                <li>Place of Birth: Brygy. Santiago, Sto. Tomas City Batangas</li>
+                                <li>Hobby: Online Gaming/Reading</li>
+                                <li>Talent/s: Singing/Dancing</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Kristian Paul Recto</a>
+                        <div class="info_2">
+                            <ul>
+                                <img src="recto.png" width="170" height="170" class="recto">
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <li>Age: 21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Course: BS-CpE</li>
+                                <li>Course: BS-CpE</li>
+                                <li>Year & Section: 4A</li>
+                                <li>Birthday: January 15, 2001</li>
+                                <li>Place of Birth: Brygy. San Pablo, Sto. Tomas City Batangas</li>
+                                <li>Hobby: Online Gaming/Drawing</li>
+                                <li>Talent/s: None</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">John Kevin Mampusti</a>
+                        <div class="info_3">
+                            <ul>
+                                <img src="kevin.jpg" width="170" height="170" class="kevin">
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <li>Age: 21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Course: BS-CpE</li>
+                                <li>Course: BS-CpE</li>
+                                <li>Year & Section: 4A</li>
+                                <li>Birthday: November 16, 2000</li>
+                                <li>Place of Birth: Brygy. Balele, Tanauan City Batangas</li>
+                                <li>Hobby: Matulog</li>
+                                <li>Talent/s: Dinidiscover pa</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Christine Jade Marasigan</a>
+                        <div class="info_5">
+                            <ul>
+                                <img src="jade.jpg" width="170" height="170" class="jade">
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <li>Age: 21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Course: BS-CpE</li>
+                                <li>Course: BS-CpE</li>
+                                <li>Year & Section: 4A</li>
+                                <li>Birthday: December 29, 2000</li>
+                                <li>Place of Birth: Brygy. Balete, Tanauan City Batangas</li>
+                                <li>Hobby: Reading</li>
+                                <li>Talent/s: Still hidden HAHAHA</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">John Franklin Nieras</a>
+                        <div class="info_5">
+                            <ul>
+                                <img src="franklin.png" width="170" height="170" class="franklin">
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <li>Age: 20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Course: BS-CpE</li>
+                                <li>Course: BS-CpE</li>
+                                <li>Year & Section: 4A</li>
+                                <li>Birthday: December 23, 2001</li>
+                                <li>Place of Birth: Brygy. Wawa, Tanauan City Batangas</li>
+                                <li>Hobby: Playing Guitar/Reading Books</li>
+                                <li>Talent/s: Guitarist</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li>
+            <a href="#"><i class="fa fa-address-card"></i>&nbsp;&nbsp;ABOUT US</a>
+            <div class="sub_menu_2">
+                <h5>
+                    <ul>
+                        <h3>
+                        <li>School: Tanauan City College</li>
+                        <li>School Address: Brgy. Trapiche 1, Tanauan City Batangas</li>
+                        <li>
+                            The creators of the website ET4Site are Ederson Manalo, Vince Harris Mangabat, Kristian Paul Recto, John Kevin Mampusti, Christine Jade Marasigan, and Franklin Nieras. These individuals are pursuing a Bachelor's Degree in Computer Engineering.
+                        </li>
+                        <li>They are in their fourth year of college and enrolled at Tanauan City College.</li>
+                        <li>The ET4Site was created as a way to fulfill the subject of Emerging Technology. For more information, you can browse this website and select from many options, including "home", "profile", "about us", and "contact us" to learn more about the author.</li>
+                        </h3>
+                    </ul>
+                </h5>
+            </div>
+        </li>
+        <li>
+            <a href="#"><i class="fa fa-phone"></i>&nbsp;&nbsp;CONTACT US</a>
+            <div class="contact">
+                <ul>
+                    <p>Do you have any concerns? Questions? Inquiries? Leave us a message now!</p>
+                    <li><a href="#"><i class="fa fa-user"></i>&nbsp;&nbsp;Ederson Manalo</a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i>&nbsp;&nbsp;manaloederson@gmail.com</a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i>&nbsp;&nbsp;09159329550</a></li>
+                    <br />
+                    <li><a href="#"><i class="fa fa-user"></i>&nbsp;&nbsp;Vince Harris Mangabat</a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i>&nbsp;&nbsp;vincemangabat7@gmail.com</a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i>&nbsp;&nbsp;09309144996</a></li>
+                    <br />
+                    <li><a href="#"><i class="fa fa-user"></i>&nbsp;&nbsp;Kristian Paul Recto</a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i>&nbsp;&nbsp;paulrecto@gmail.com</a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i>&nbsp;&nbsp;09515604788</a></li>
+                    <br />
+                    <li><a href="#"><i class="fa fa-user"></i>&nbsp;&nbsp;John Kevin Mampusti</a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i>&nbsp;&nbsp;paulrecto@gmail.com</a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i>&nbsp;&nbsp;09515604788</a></li>
+                    <br />
+                    <li><a href="#"><i class="fa fa-user"></i>&nbsp;&nbsp;Christine Jade Marasigan</a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i>&nbsp;&nbsp;tcc.0034.2019@gmail.com</a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i>&nbsp;&nbsp;09356147164</a></li>
+                    <br />
+                    <li><a href="#"><i class="fa fa-user"></i>&nbsp;&nbsp;John Franklin Nieras</a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i>&nbsp;&nbsp;tcc.0182.2020@gmail.com</a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i>&nbsp;&nbsp;09169829929</a></li>
+                    <br />
+                </ul>
+            </div>
+        </li>
+        </ul>
+        </div>
+        </h4>
+    </body>
+    </html>
